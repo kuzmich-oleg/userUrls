@@ -1,0 +1,16 @@
+﻿@model IEnumerable<UrlViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="mainContainer">
+    <div class="sub subRight"></div>
+    <div class="sub subLeft">
+        <div id="tableContainer">
+            @Html.Partial("UrlList", Model)
+        </div>        
+        <div id="addUrl" class="btn btn-primary">Add</div>
+    </div>
+</div>
+

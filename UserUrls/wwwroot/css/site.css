@@ -1,0 +1,53 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.sub {
+    width: 50%;
+    padding: 1%;
+}
+
+.subRight {
+    float: right;
+}
+
+textarea {
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.error {
+    margin: 5px auto;
+    text-align: center;
+    border: 1px solid firebrick;
+    border-radius: 5px;
+}
+
+.floatRight {
+    float: right;
+}
+
+.container {
+    position: relative;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    z-index: 1000;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .sub {
+        width: 100%;
+    }
+
+    .subRight {
+        float: none;
+    }
+}

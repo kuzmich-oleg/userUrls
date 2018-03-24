@@ -1,0 +1,26 @@
+﻿@model IEnumerable<UrlViewModel>
+
+@{
+    Layout = null;
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Url</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var url in Model)
+        {
+            string urlId = "url_" + url.Id;
+            string removeId = "delete_" + url.Id;
+            <tr>
+                <td>
+                    <span id="@removeId" data-toggle="tooltip" title="Click to remove" class="glyphicon glyphicon-remove floatRight"></span>
+                    <span id="@urlId" class="url" data-toggle='tooltip' title="Click to edit">@url.Url</span>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
